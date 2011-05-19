@@ -1,0 +1,8 @@
+Class Not Implemented in Bytewalla Project from DTN2 (Discovery Folder)
+
+BluetoothAnnounce
+BluetoothDiscovery
+(We are not implemented Bluetooth)
+
+BounjourDiscovery
+(This is specific for MAC OS)

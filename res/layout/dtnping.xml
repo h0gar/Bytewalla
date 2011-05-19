@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content">
+
+
+<TableLayout android:id="@+id/TableLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+<TableRow>
+<EditText android:text="EndpointID Goes Here" android:id="@+id/PingEndpointIdEditText" android:layout_width="fill_parent" android:layout_height="wrap_content"></EditText>  
+<Button android:text="Ping" android:id="@+id/DTNPingButton" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+</TableRow>
+<TableRow>
+
+<TextView android:text="Result goes here" android:id="@+id/ResultTextView" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+
+
+</TableRow>
+</TableLayout>
+
+
+
+
+</LinearLayout>

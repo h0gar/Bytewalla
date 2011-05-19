@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:stretchColumns="2">
+
+		<TableRow>
+			<ImageView android:layout_column="1"
+				android:id="@+id/DTNApps_DTNSendImageView" android:layout_height="40dip"
+				android:layout_width="wrap_content" android:src="@drawable/dtnsend"
+				android:layout_gravity="center_vertical" />
+			<TextView android:layout_column="2"
+				android:layout_marginLeft="15dp" android:id="@+id/DTNApps_DTNSendTextView"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="DTN Send" android:textSize="20sp" />
+			<Button android:layout_column="3" android:text="Open"
+				android:id="@+id/DTNApps_DTNSendOpenButton" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></Button>
+
+		</TableRow>
+
+		<TableRow>
+			<ImageView android:layout_column="1"
+				android:id="@+id/DTNApps_DTNReciveImageView" android:layout_height="40dip"
+				android:layout_width="wrap_content" android:src="@drawable/dtnreceive"
+				android:layout_gravity="center_vertical" />
+			<TextView android:layout_column="2"
+				android:layout_marginLeft="15dp" android:id="@+id/DTNApps_DTNReciveTextView"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="DTN Receive" android:textSize="20sp" />
+
+			<Button android:layout_column="3" android:text="Open"
+				android:id="@+id/DTNApps_DTNReceiveOpenButton" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"></Button>
+
+		</TableRow>
+
+	</TableLayout>
+	<Button android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/DTNApps_CloseButton"
+		android:text="Close" android:layout_marginTop="10dp"
+		android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

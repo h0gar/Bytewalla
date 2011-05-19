@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+  <TextView android:layout_column="1" 
+	android:id="@+id/DTNApps_DTNSend_DestEIDCaptionTextView"
+	android:layout_width="wrap_content" android:textSize="15sp" 
+	android:layout_height="wrap_content"
+	android:layout_marginTop="8dp"
+	android:text="Destination Endpoint ID:"></TextView>
+		
+   <EditText 
+    android:layout_column="1" 
+   android:text="dtn://mahesh.dtn/test" android:id="@+id/DTNApps_DTNSend_DestEIDEditText" 
+   android:layout_width="fill_parent" android:layout_height="wrap_content"
+  ></EditText>
+
+
+
+<LinearLayout 
+xmlns:android="http://schemas.android.com/apk/res/android" 
+android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" 
+android:id="@+id/DTNApps_DTNSend_SendButton"
+ 
+android:text="Send"   
+  />
+  
+  
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" 
+android:id="@+id/DTNApps_DTNSend_CloseButton"
+android:text="Close"   
+android:layout_marginLeft="10dp"
+
+  />  
+  
+</LinearLayout>
+
+ <TextView android:layout_column="1" 
+	android:id="@+id/DTNApps_DTNSend_MessageCaptionTextView"
+	android:layout_width="wrap_content" android:textSize="15sp" 
+	android:layout_height="wrap_content"
+	android:layout_marginTop="8dp"
+	android:text="Message:"></TextView>
+  <EditText 
+    android:layout_column="2"  android:lines="6"  
+   android:text="" android:id="@+id/DTNApps_DTNSend_MessageTextView" 
+   android:layout_width="fill_parent" android:layout_height="fill_parent"></EditText>
+	
+	
+
+  
+		
+</LinearLayout>

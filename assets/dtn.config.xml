@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<!--  Main configuration file for Android DTN Project -->
+	<!--  Its XML Schema is dtn.config.xsd in the same folder -->
+<tns:DTNConfiguration xmlns:tns="http://www.bytewalla.tslab.ssvl.kth.se/DTNConf"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.bytewalla.tslab.ssvl.kth.se/DTNConf dtn.config.xsd">
+
+	<!--  Storage Section -->
+	<!--  Setup your storage here -->
+	<!--  type can be phone or sdcard -->
+	<!--
+		quota is the space you will allow DTN to store bundles in the storage
+		type you set, the unit is Megabytes
+	-->
+	<tns:StorageSetting type="sdcard" quota="300"
+		storage_path="dtn" />
+
+
+	<!--  Interfaces Section -->
+	<tns:InterfacesSetting>
+		<!--  Setup your listening interfaces here -->
+		<tns:Interface id="tcp0" conv_layer_type="tcp"
+			local_port="4556" />
+	</tns:InterfacesSetting>
+
+
+	<!--  Links Section -->
+	<tns:LinksSetting>
+		<!--  Setup your links here -->
+	</tns:LinksSetting>
+
+
+	<!--  Routes Section -->
+	<tns:RoutesSetting router_type="prophet" P_encounter="0.5"
+		P_encounter_first="0.25" delta="0.01" alpha="0.5" beta="0.9" K="1">
+		<!--  Setup your routes here -->
+	</tns:RoutesSetting>
+
+	<tns:DiscoveriesSetting>
+		<!--  Setup your Discovery here -->
+		<tns:Discovery id="ipdisc0" address_family="ip" port="9556"></tns:Discovery>
+		<tns:Announce interface_id="tcp0" discovery_id="ipdisc0"
+			conv_layer_type="tcp"></tns:Announce>
+	</tns:DiscoveriesSetting>
+
+</tns:DTNConfiguration>

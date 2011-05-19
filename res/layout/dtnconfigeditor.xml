@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  >
+
+
+
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+android:layout_marginTop="15dip"
+android:layout_marginBottom="5dip"
+>
+	
+  <Button android:text="Save" android:id="@+id/DTNConfig_SaveButton" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button> 
+  <Button android:text="Close" android:id="@+id/DTNConfig_CloseButton" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button> 
+ 
+</LinearLayout>
+
+
+<EditText android:scrollHorizontally="true" android:scrollbars="vertical"
+android:inputType="textMultiLine"
+android:id="@+id/DTNConfig_EditText" android:layout_width="fill_parent" android:layout_height="fill_parent"></EditText>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="se.kth.ssvl.tslab.bytewalla.androiddtn"
+      android:versionCode="1" android:versionName="3.0">
+    <application android:icon="@drawable/launcher" android:debuggable="true" android:label="Bytewalla DTN v 3.0">
+       
+
+    
+    
+    
+    <activity android:name=".DTNManager" android:label="Bytewalla">
+    		 <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+    </activity>
+    
+     <activity android:name=".DTNConfigEditor" android:label="DTNConfigEditor" >
+    	
+    </activity>
+    
+    <activity android:name=".apps.DTNSend" android:label="DTNSend">
+    
+    </activity>
+    
+     <activity android:name=".apps.DTNReceive" android:label="DTNReceive">
+    
+    </activity>
+        <activity android:name=".apps.DTNApps" android:label="DTNApps" >
+    	
+    </activity>
+    <service  android:name=".DTNService" android:label="DTNService"  ></service>
+    
+</application>
+    <uses-sdk android:minSdkVersion="4" />
+
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+</manifest> 
